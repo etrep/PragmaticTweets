@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,28 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I finished the first project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-Bx-OZc">
-                                <rect key="frame" x="205" y="28" width="191" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFi-Eo-wxN">
-                                <rect key="frame" x="260" y="57" width="81" height="30"/>
+                                <rect key="frame" x="260" y="58" width="81" height="30"/>
                                 <state key="normal" title="Send Tweet"/>
+                                <connections>
+                                    <action selector="handleTweetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDs-nk-KRX"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsE-56-FNW">
+                                <rect key="frame" x="242" y="20" width="116" height="30"/>
+                                <state key="normal" title="Show My Tweets"/>
+                                <connections>
+                                    <action selector="handleShowMyTweetsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWJ-Qu-lPI"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWD-9s-Cfs">
+                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oFi-Eo-wxN" firstAttribute="top" secondItem="BJa-Bx-OZc" secondAttribute="bottom" constant="8" symbolic="YES" id="6lN-YT-aWL"/>
-                            <constraint firstItem="BJa-Bx-OZc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iog-mU-pNu"/>
-                            <constraint firstItem="BJa-Bx-OZc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="M5E-iA-hIW"/>
+                            <constraint firstItem="cWD-9s-Cfs" firstAttribute="top" secondItem="oFi-Eo-wxN" secondAttribute="bottom" constant="8" symbolic="YES" id="2MX-SB-jyQ"/>
+                            <constraint firstItem="WsE-56-FNW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6qm-4P-INu"/>
+                            <constraint firstItem="WsE-56-FNW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sfl-3R-6l9"/>
+                            <constraint firstItem="cWD-9s-Cfs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZdP-lZ-Hih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cWD-9s-Cfs" secondAttribute="bottom" id="alb-Ka-0xY"/>
+                            <constraint firstAttribute="trailing" secondItem="cWD-9s-Cfs" secondAttribute="trailing" id="fYX-wq-V4a"/>
                             <constraint firstItem="oFi-Eo-wxN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pn7-kz-fWg"/>
+                            <constraint firstItem="oFi-Eo-wxN" firstAttribute="top" secondItem="WsE-56-FNW" secondAttribute="bottom" constant="8" symbolic="YES" id="qor-TR-DES"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="twitterWebView" destination="cWD-9s-Cfs" id="4Do-aM-fyK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="272" y="531"/>
         </scene>
     </scenes>
 </document>
