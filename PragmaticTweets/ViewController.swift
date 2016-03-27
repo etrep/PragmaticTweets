@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        reloadTweets()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,11 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func handleShowMyTweetsTapped(sender: UIButton) {
-        guard let url = NSURL(string: "https://twitter.com/eric_appleseed") else {
-            return
-        }
-        let urlRequest = NSURLRequest(URL: url)
-        twitterWebView.loadRequest(urlRequest)
+        reloadTweets()
     }
     
     @IBAction func handleTweetButtonTapped(sender: UIButton) {
@@ -41,5 +37,12 @@ class ViewController: UIViewController {
         }
     }
 
+    func reloadTweets() {
+        guard let url = NSURL(string: "https://twitter.com/eric_appleseed") else {
+            return
+        }
+        let urlRequest = NSURLRequest(URL: url)
+        twitterWebView.loadRequest(urlRequest)
+    }
 }
 
