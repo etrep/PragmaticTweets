@@ -14,7 +14,8 @@
 		076BC5241CA6E03900225988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076BC5221CA6E03900225988 /* LaunchScreen.storyboard */; };
 		076BC52F1CA6E03900225988 /* PragmaticTweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076BC52E1CA6E03900225988 /* PragmaticTweetsTests.swift */; };
 		076BC53A1CA6E03900225988 /* PragmaticTweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076BC5391CA6E03900225988 /* PragmaticTweetsUITests.swift */; };
-		076BC5481CA8651B00225988 /* WebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076BC5471CA8651B00225988 /* WebViewTests.swift */; };
+		076BC54A1CA88BB900225988 /* ParsedTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076BC5491CA88BB900225988 /* ParsedTweet.swift */; };
+		076BC54C1CA8922D00225988 /* ParsedTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076BC54B1CA8922D00225988 /* ParsedTweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		076BC5351CA6E03900225988 /* PragmaticTweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PragmaticTweetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		076BC5391CA6E03900225988 /* PragmaticTweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragmaticTweetsUITests.swift; sourceTree = "<group>"; };
 		076BC53B1CA6E03900225988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		076BC5471CA8651B00225988 /* WebViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTests.swift; sourceTree = "<group>"; };
+		076BC5491CA88BB900225988 /* ParsedTweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedTweet.swift; sourceTree = "<group>"; };
+		076BC54B1CA8922D00225988 /* ParsedTweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ParsedTweetCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,8 @@
 			children = (
 				076BC5191CA6E03900225988 /* AppDelegate.swift */,
 				076BC51B1CA6E03900225988 /* ViewController.swift */,
+				076BC5491CA88BB900225988 /* ParsedTweet.swift */,
+				076BC54B1CA8922D00225988 /* ParsedTweetCell.swift */,
 				076BC51D1CA6E03900225988 /* Main.storyboard */,
 				076BC5201CA6E03900225988 /* Assets.xcassets */,
 				076BC5221CA6E03900225988 /* LaunchScreen.storyboard */,
@@ -113,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				076BC52E1CA6E03900225988 /* PragmaticTweetsTests.swift */,
-				076BC5471CA8651B00225988 /* WebViewTests.swift */,
 				076BC5301CA6E03900225988 /* Info.plist */,
 			);
 			path = PragmaticTweetsTests;
@@ -260,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076BC54C1CA8922D00225988 /* ParsedTweetCell.swift in Sources */,
+				076BC54A1CA88BB900225988 /* ParsedTweet.swift in Sources */,
 				076BC51C1CA6E03900225988 /* ViewController.swift in Sources */,
 				076BC51A1CA6E03900225988 /* AppDelegate.swift in Sources */,
 			);
@@ -270,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				076BC52F1CA6E03900225988 /* PragmaticTweetsTests.swift in Sources */,
-				076BC5481CA8651B00225988 /* WebViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
