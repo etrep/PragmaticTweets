@@ -9,7 +9,7 @@
 import Social
 import Accounts
 
-func sendTwitterRequesst(requestURL: NSURL, params: [String: String], completion: SLRequestHandler) {
+func sendTwitterRequest(requestURL: NSURL, params: [String: String], completion: SLRequestHandler) {
   let accountStore = ACAccountStore()
   let twitterAccountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
   accountStore.requestAccessToAccountsWithType(twitterAccountType, options: nil) { (granted, error) in
