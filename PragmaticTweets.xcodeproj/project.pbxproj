@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010432251BAE2A6500B96ED4 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010432241BAE2A6500B96ED4 /* UserDetailViewController.swift */; };
+		010432251BAE2A6500B96ED4 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010432241BAE2A6500B96ED4 /* UserDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		010981B71B9DBB1800CF65D8 /* TwitterAPIRequestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010981B61B9DBB1800CF65D8 /* TwitterAPIRequestUtilities.swift */; };
 		011DD8D01B93D72C00CC64AB /* ParsedTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011DD8CF1B93D72C00CC64AB /* ParsedTweetCell.swift */; };
-		012E49461BA7993100DA8708 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E49451BA7993100DA8708 /* TweetDetailViewController.swift */; };
+		012E49461BA7993100DA8708 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E49451BA7993100DA8708 /* TweetDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		016D5BBD1B82B46F002286C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5BBC1B82B46F002286C3 /* AppDelegate.swift */; };
 		016D5BBF1B82B46F002286C3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5BBE1B82B46F002286C3 /* RootViewController.swift */; };
 		016D5BC21B82B46F002286C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016D5BC01B82B46F002286C3 /* Main.storyboard */; };
@@ -18,7 +18,7 @@
 		016D5BC71B82B46F002286C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016D5BC51B82B46F002286C3 /* LaunchScreen.storyboard */; };
 		016D5BD21B82B46F002286C3 /* PragmaticTweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5BD11B82B46F002286C3 /* PragmaticTweetsTests.swift */; };
 		016D5BDD1B82B46F002286C3 /* PragmaticTweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5BDC1B82B46F002286C3 /* PragmaticTweetsUITests.swift */; };
-		01EA5E6C1BB8B9CF001C6FAF /* SizeClassOverrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA5E6B1BB8B9CF001C6FAF /* SizeClassOverrideViewController.swift */; };
+		01EA5E6C1BB8B9CF001C6FAF /* SizeClassOverrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA5E6B1BB8B9CF001C6FAF /* SizeClassOverrideViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		01F3A92A1B93C76B00F1BA5A /* ParsedTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3A9291B93C76B00F1BA5A /* ParsedTweet.swift */; };
 /* End PBXBuildFile section */
 
@@ -250,7 +250,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Eric Trepanier";
+				ORGANIZATIONNAME = "Pragmatic Programmers, LLC";
 				TargetAttributes = {
 					016D5BB81B82B46F002286C3 = {
 						CreatedOnToolsVersion = 7.0;

@@ -2,8 +2,8 @@
 //  PragmaticTweetsUITests.swift
 //  PragmaticTweetsUITests
 //
-//  Created by Éric Trépanier on 16-03-26.
-//  Copyright © 2016 Eric Trepanier. All rights reserved.
+//  Created by Chris Adamson on 8/17/15.
+//  Copyright © 2015 Pragmatic Programmers, LLC. All rights reserved.
 //
 
 import XCTest

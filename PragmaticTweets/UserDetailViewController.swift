@@ -2,8 +2,8 @@
 //  UserDetailViewController.swift
 //  PragmaticTweets
 //
-//  Created by Éric Trépanier on 16-04-04.
-//  Copyright © 2016 Eric Trepanier. All rights reserved.
+//  Created by Chris Adamson on 9/19/15.
+//  Copyright © 2015 Pragmatic Programmers, LLC. All rights reserved.
 //
 
 import UIKit
